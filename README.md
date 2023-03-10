@@ -1,4 +1,4 @@
-# Sales-Predictions
+# Sales Predictions
 
 ![image](https://user-images.githubusercontent.com/123125444/224272426-d439f3d5-ba4b-4ea9-8904-8fdbf315454f.png)
 
