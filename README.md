@@ -14,7 +14,7 @@ Many times it is hard to tell if a certain product is going to sell at the expec
 - The figure below is a histogram that shows the distribution of the Item Outlet Sales of the different items sold. This data shows that there are more items sold that have lower item outlet sales. The figure also shows the median of the item outlet sales which is $1,794.33 and is designated with the dashed line. 
 ![image](https://user-images.githubusercontent.com/123125444/224275509-cf563772-09e2-4d91-bc34-d36a046444aa.png)
 
-- The figure below shows that there are more unique Low Fat items that there are Regular items that are available.
+- The figure below shows that there are more unique Low Fat items than there are Regular items.
 ![image](https://user-images.githubusercontent.com/123125444/224276329-d52328e3-7e1d-4f50-8446-b33de37cabe4.png)
 
 - The figure below shows that the only sets of data that have any sort of correlation are Item_Visibility and Item_Outlet_Sales. The correlation is a negative correlation, so as Item_Visibility goes up, the Item_Outlet_Sales goes down, and vice versa.
@@ -66,10 +66,10 @@ Tuned Random Forest Model:
 - Both of the histograms above have similar shapes. We can see that high visibility items are quite low in count. We also see that the higher the item outlet sales, the count of item are being sold at that higher price. 
 - We also see that the store carries more low fat items in the stores. 
 - From the heat map above, we also see that most of the data features do not have a lot or correlation between each other, making it harder to predict testing data. We may need more data to work with or add new features to the data to better predict sales. 
-- From the data, we can predict item outlet sales using linear regression models, but 
+- From the data, we can predict item outlet sales using linear regression models.
   
 # Final Recommedation
-- We may need more data and more data features for better sales predictions, but if we needed to predict sales now the linear regression model work the best. 
+- We may need more data and more data features for better sales predictions, but if we needed to predict sales now the linear regression model works the best. 
   
   
   
