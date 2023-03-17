@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/123125444/224272426-d439f3d5-ba4b-4ea9-8904-8fdbf315454f.png)
 
 # Analyzing and Predicting Store Products Sales 
-Many times it is hard to tell if a certain product is going to sell at the expect price or quantity. This information is vital in knowing what products need to be reworked or change in product placement. All of these factors account for the overall success in a business that is selling items on shelves. 
+Many times it is hard to tell if a certain product is going to sell at the expected price or quantity. This information is vital in knowing what products need to be reworked or changed in product placement. All of these factors account for the overall success in a business that is selling items on shelves. 
 
 # Data Dictionary
 ![image](https://user-images.githubusercontent.com/123125444/224272935-fd34b7d7-3de0-4ef0-9091-5241bb8c7258.png)
