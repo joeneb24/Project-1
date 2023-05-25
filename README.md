@@ -6,22 +6,36 @@
 Many times it is hard to tell if a certain product is going to sell at the expected price or quantity. This information is vital in knowing what products need to be reworked or changed in product placement. All of these factors account for the overall success in a business that is selling items on shelves. 
 
 # Data Dictionary
+
 ![image](https://user-images.githubusercontent.com/123125444/224272935-fd34b7d7-3de0-4ef0-9091-5241bb8c7258.png)
 
 # Data preparation and cleaning was done on the data before the following processes:
 
 ## Exploratory Data Analysis
 - The figure below is a histogram that shows the distribution of the Item Outlet Sales of the different items sold. This data shows that there are more items sold that have lower item outlet sales. The figure also shows the median of the item outlet sales which is $1,794.33 and is designated with the dashed line. 
+
 ![image](https://user-images.githubusercontent.com/123125444/224275509-cf563772-09e2-4d91-bc34-d36a046444aa.png)
 
 - The figure below shows that there are more unique Low Fat items than there are Regular items.
+
 ![image](https://user-images.githubusercontent.com/123125444/224276329-d52328e3-7e1d-4f50-8446-b33de37cabe4.png)
 
 - The figure below shows that the only sets of data that have any sort of correlation are Item_Visibility and Item_Outlet_Sales. The correlation is a negative correlation, so as Item_Visibility goes up, the Item_Outlet_Sales goes down, and vice versa.
+
 ![image](https://user-images.githubusercontent.com/123125444/224287372-ef3c0e77-b642-464d-830f-8ecef3a63d73.png)
+
+- The figure below shows a Linear Regression coefficent plot. The three most important features are Outlet Type Grocery Store, Outlet Type Supermarket Type 2, and Outlet Type Supermaket Type 1.
+These three had the most impact, since they had the highest absolute coefficents. Outlet Type Grocery Store was the most impactful, its coeffiecent means that this feature affects the predicted sale by -3344 dollars . For Outlet Type Supermarket Type 2, it affects the predicted sale by -1707 dollars. For Outlet Type Supermarket Type 1, it affects the predicted sale by -1387 dollars.
+
+![LinearRegressionModelSalesPredictions](https://github.com/joeneb24/Sales-Predictions/assets/123125444/1c70839f-0390-4cda-8bbc-66e699c051ac)
+
+- The figure below showes a Random Forest Model for its feature importances. The higher the value, the more important that feature is in predicting the sales. 
+
+![RandomForestModelSalesPredictions](https://github.com/joeneb24/Sales-Predictions/assets/123125444/b0ad8a0d-d29a-48f2-9f22-537597db475d)
 
 ## Explanatory Data Analysis
 - In the visual above, we see that the item visibility avearge is 0.066 and its median is 0.054. Most of the item visibility is low across the board.
+
 ![image](https://user-images.githubusercontent.com/123125444/224277000-062c2395-df41-44b5-98b0-79281fce7962.png)
 
 ## Maching Learning Using the Following Models:
