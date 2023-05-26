@@ -35,14 +35,14 @@ These three had the most impact, since they had the highest absolute coefficents
 
 - The figure below is a shap summary of importances while the figure above shows the importances from a random forest model. We see that for both the most important feature is ItemMRP and following that for both figures in importance is Outlet Type Grocercy Store. Where it starts to differ are the next 5 features after the first two important features. We see that Outlet Type Supermarket Type 1 and Outlet Type Supermarket Type 2 are replaced in order of importance by Item Visibilty and Item Weight for both figures respectively. This does make sense becuase the random forest importance figure below, the model did not take into account permutation importance. In summary, the top two most important features are ItemMRP and Outlet Type Grocery Store. 
 
-![rfSHAP](https://github.com/joeneb24/Sales-Predictions/assets/123125444/f8781d1a-5da3-4b5f-90c7-3f377b20799e)
+![rfSHAPBar](https://github.com/joeneb24/Sales-Predictions/assets/123125444/88cd644e-6211-4e05-999b-baef66cc1df7)
 
 -The figure below is a dot summary of the important features of the data set. The three most important features are ItemMRP, Outlet Type Grocery Store, and Outlet Type Supermarket Type 1.
 For Item MRP, we see the red dots are on the right or positive side, we can see that the higher the Item MRP, the more likely the model will predict a higher sale.
 For Outlet Type Grocerstore, we see the red values are on the left or negative side, and since this feature is OHE or a yes or no, this means that if a store is a Grocery Store then the model is likely to predict less sales.
 For Outlet Type Supermarket Type 1, the red vaues are on the left, meaning if the store is of type Outlet Type Supermarket Type 1, then the model predicts a lower sale.
 
-![rfSHAPDot](https://github.com/joeneb24/Sales-Predictions/assets/123125444/001d2e2d-24ae-4ebf-80f1-8739a8d1f1c8)
+![rfSHAPDot](https://github.com/joeneb24/Sales-Predictions/assets/123125444/b391852d-0cff-4e6f-a3b5-4432f9e4b7ce)
 
 ## Explanatory Data Analysis
 - In the visual above, we see that the item visibility avearge is 0.066 and its median is 0.054. Most of the item visibility is low across the board.
