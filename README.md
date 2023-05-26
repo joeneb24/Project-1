@@ -24,6 +24,13 @@ Many times it is hard to tell if a certain product is going to sell at the expec
 
 ![image](https://user-images.githubusercontent.com/123125444/224287372-ef3c0e77-b642-464d-830f-8ecef3a63d73.png)
 
+## Explanatory Data Analysis
+- In the visual above, we see that the item visibility avearge is 0.066 and its median is 0.054. Most of the item visibility is low across the board.
+
+![image](https://user-images.githubusercontent.com/123125444/224277000-062c2395-df41-44b5-98b0-79281fce7962.png)
+
+## Linear Coefficents and Feature Importances
+
 - The figure below shows a Linear Regression coefficent plot. The three most important features are Outlet Type Grocery Store, Outlet Type Supermarket Type 2, and Outlet Type Supermaket Type 1.
 These three had the most impact, since they had the highest absolute coefficents. Outlet Type Grocery Store was the most impactful, its coeffiecent means that this feature affects the predicted sale by -3344 dollars . For Outlet Type Supermarket Type 2, it affects the predicted sale by -1707 dollars. For Outlet Type Supermarket Type 1, it affects the predicted sale by -1387 dollars.
 
@@ -32,6 +39,8 @@ These three had the most impact, since they had the highest absolute coefficents
 - The figure below showes a Random Forest Model for its feature importances. The higher the value, the more important that feature is in predicting the sales. 
 
 ![RandomForestModelSalesPredictions](https://github.com/joeneb24/Sales-Predictions/assets/123125444/b0ad8a0d-d29a-48f2-9f22-537597db475d)
+
+## Global Explanations
 
 - The figure below is a shap summary of importances while the figure above shows the importances from a random forest model. We see that for both the most important feature is ItemMRP and following that for both figures in importance is Outlet Type Grocercy Store. Where it starts to differ are the next 5 features after the first two important features. We see that Outlet Type Supermarket Type 1 and Outlet Type Supermarket Type 2 are replaced in order of importance by Item Visibilty and Item Weight for both figures respectively. This does make sense becuase the random forest importance figure below, the model did not take into account permutation importance. In summary, the top two most important features are ItemMRP and Outlet Type Grocery Store. 
 
@@ -44,10 +53,29 @@ For Outlet Type Supermarket Type 1, the red vaues are on the left, meaning if th
 
 ![rfSHAPDot](https://github.com/joeneb24/Sales-Predictions/assets/123125444/b391852d-0cff-4e6f-a3b5-4432f9e4b7ce)
 
-## Explanatory Data Analysis
-- In the visual above, we see that the item visibility avearge is 0.066 and its median is 0.054. Most of the item visibility is low across the board.
+## Local Explanations
 
-![image](https://user-images.githubusercontent.com/123125444/224277000-062c2395-df41-44b5-98b0-79281fce7962.png)
+- Examples explanation: The two local example we will explain are the highest and lowest values for Item MRP. We chose these examples to highlight how important and impactful Item MRP is Item Outlet Sales, which is our target. We specifically chose Item MRP because it had the most importance in predictions, as shown in the global explanation figures earlier.
+
+- Highest MRP Summary: From the figure below in the LIME explanation, we see that the feature that most heavily influenced the predictions were Outlet Type Grocery, Item MRP, and Outlet Type Supermarket Type 1. Outlet Type Grocery and Item MRP had the most positive influence in predicting higher sales, while Outlet Type Supermarket Type 1 had the biggest influence in lowers the predicted sales. The biggest influential feature was Outlet Type Grocery. We also see that the predicted value for sale was only off by 629 dollars. From the force plot figure below as well, we see that the features that had the most impact in increasing the predicted sales were Item MRP, Outlet Type Grocery Store, and Item Visibility. The most influential feature for the force plot was Item MRP. We also see that the predicted value for sale was only off by 629 dollars.
+
+LIME Highest MRP
+
+![highMRPLIME](https://github.com/joeneb24/Sales-Predictions/assets/123125444/18ef315e-3d5f-4ad7-a2ed-d59bdc8f769d)
+
+Force Plot Highest MRP
+
+![highMRPForcePlot](https://github.com/joeneb24/Sales-Predictions/assets/123125444/355291a7-7326-4fc0-8c87-9cb8558307d8)
+
+-Lowest MRP Summary: From the figure below in the LIME explanation, we see that the feature that most heavily influenced the predictions were Outlet Type Grocery, Item MRP, and Outlet Type Supermarket Type 1. Outlet Type Grocery and Outlet Type Supermarket Type 2 had the most positive influence in predicting higher sales, while Outlet Type Supermarket Type 1 and Item MRP had the biggest influence in lowering the predicted sales. The biggest influential feature was Outlet Type Grocery Store and right after it was Item MRP. We also see that the predicted value for sale was only off by 189 dollars. From the force plot figure, we see that the features that had the most impact in increasing the predicted sales was Outlet Type Grocery Store. The most influential feature for the force plot was Item MRP. We see that Item MRP had the biggest influence in predicting a lower sale. We also see that the predicted value for sale was only off by 189 dollars.
+
+LIME Lowest MRP
+
+![lowMRPLIME](https://github.com/joeneb24/Sales-Predictions/assets/123125444/c2332d96-daa6-4147-86b0-c55badd85bef)
+
+Force Plot Lowest MRP
+
+![lowMRPForcePlot](https://github.com/joeneb24/Sales-Predictions/assets/123125444/82387f6a-09fd-4c07-a39b-3069b1f32ffd)
 
 ## Maching Learning Using the Following Models:
 - Linear Regression Model
