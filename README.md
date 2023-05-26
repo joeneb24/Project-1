@@ -38,7 +38,7 @@ These three had the most impact, since they had the highest absolute coefficents
 ![rfSHAP](https://github.com/joeneb24/Sales-Predictions/assets/123125444/f8781d1a-5da3-4b5f-90c7-3f377b20799e)
 
 -The figure below is a dot summary of the important features of the data set. The three most important features are ItemMRP, Outlet Type Grocery Store, and Outlet Type Supermarket Type 1.
-For Item MRP, we see the red dots are on the right or positive side, we can see that the lower the Item MRP, the more likely the model will predict a higher sale.
+For Item MRP, we see the red dots are on the right or positive side, we can see that the higher the Item MRP, the more likely the model will predict a higher sale.
 For Outlet Type Grocerstore, we see the red values are on the left or negative side, and since this feature is OHE or a yes or no, this means that if a store is a Grocery Store then the model is likely to predict less sales.
 For Outlet Type Supermarket Type 1, the red vaues are on the left, meaning if the store is of type Outlet Type Supermarket Type 1, then the model predicts a lower sale.
 
